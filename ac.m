@@ -12,7 +12,7 @@ for i=1:length(mulist)
         fprintf("mu=%f,delta=%f\n",mu,delta);
         [alph,val]=critical_alpha(mu,delta);        
         alphac(j,i)=alph;
-        valc(j,i)=valc;
+        valc(j,i)=val;
     end
 %     alphac(:,i)=alphactmp;
 end
