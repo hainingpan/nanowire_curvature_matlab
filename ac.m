@@ -6,8 +6,8 @@ parfor i=1:length(mulist)
     for j=1:length(deltalist)
         mu=mulist(i);
         delta=deltalist(j);
-        alphactmp(j)=j;
-%         alphactmp(j)=critical_alpha(mu,delta);
+%         alphactmp(j)=j;
+        alphactmp(j)=critical_alpha(mu,delta);
 %         alphac(j,i)=critical_alpha(mu,delta);
     end
     alphac(:,i)=alphactmp;
