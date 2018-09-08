@@ -1,6 +1,6 @@
-mulist=0:0.01:4;
+mulist=0:.4:.4;
 en=zeros(length(mulist),100);
-for muindex=1:length(mulist)
+parfor muindex=1:length(mulist)
     mu=mulist(muindex);
     [~,en2]=g(mu,.2,2);
     en(muindex,:)=en2;
