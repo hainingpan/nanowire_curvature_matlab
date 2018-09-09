@@ -1,6 +1,6 @@
 mulist=0:.01:.4;
 vzlist=0:.01:.7;
-en=zeros(length(mulist),length(vzlist));
+en=zeros(length(mulist),length(vzlist)-1);
 parfor muindex=1:length(mulist)
     mu=mulist(muindex);
     [~,en2]=g(mu,.2,2);
