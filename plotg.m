@@ -1,5 +1,5 @@
-mulist=0:.01:.4;
-vzlist=0:.01:.7;
+mulist=0:.001:.4;
+vzlist=0:.005:.7;
 en=zeros(length(mulist),length(vzlist)-1);
 parfor muindex=1:length(mulist)
     mu=mulist(muindex);
