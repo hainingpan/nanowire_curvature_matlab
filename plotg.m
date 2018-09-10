@@ -8,4 +8,4 @@ parfor alphaindex=1:length(alphalist)
     [~,en2]=g(mu,.2,alpha);
     en(alphaindex,:)=en2;
 end
-save('en.dat','en','-ascii')
+save('en2.dat','en','-ascii')
